@@ -44,9 +44,9 @@
 - **返回按钮**： 返回相应用户界面（若用户未登陆，返回相应首页）
 
 #### 参考资料
-[sweetalert2]("https://www.npmjs.com/package/sweetalert2")  
+[sweetalert2]("https://www.npmjs.com/package/sweetalert2/")  
 
-[D3.js]("https://d3js.org")  
+[D3.js]("https://d3js.org/")  
 
 [Flat UI]("www.bootcss.com/p/flat-ui/")
 
