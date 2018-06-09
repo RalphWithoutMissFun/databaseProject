@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>自强金融分析平台</title>
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
     <!-- Loading Bootstrap -->
     <link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet">
 
@@ -11,90 +12,78 @@
     <link href="docs/assets/css/demo.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="dist/favicon.ico">
-    <script src="script.js"></script>
+    <!--<script src="script.js"></script>-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 </head>
 
   <body>
-    <div class="container">
-      <div class="demo-headline">
-        <h1 class="demo-logo">
-          <div class="logo"></div>
-          Zi qiang dalao's
-          <small>Professional financial analysis platform</small>
-        </h1>
-      </div> <!-- /demo-headline -->
+        <div class="row demo-row">
+        <div class="col">
+          <nav class="navbar navbar-inverse navbar-embossed navbar-expand-lg" role="navigation">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-01"></button>
+            <div class="collapse navbar-collapse" id="navbar-collapse-01">
+              <ul class="nav navbar-nav mr-auto">
+                <li><a href="#fakelink">Menu Item<span class="navbar-unread">1</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Messages</a>
+                  <span class="dropdown-arrow"></span>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li>
+                <li><a href="#fakelink">About Us</a></li>
+               </ul>
+               <form class="navbar-form form-inline my-2 my-lg-0" action="#" role="search">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input class="form-control" id="navbarInput-01" type="search" placeholder="站内搜索">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn"><span class="fui-search"></span></button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div><!-- /.navbar-collapse -->
+          </nav><!-- /navbar -->
+        </div>
+      </div> <!-- /row -->
 
-    <h3 class="demo-panel-title mbl pbl">Welcomes</h3>
       <div class="row demo-samples">
-        <div class="col-4">
-          <div class="todo">
-            <div class="todo-search">
-              <!-- Search在这儿-->
-              <input class="todo-search-field" id="data" type="search" value="" placeholder="搜索" />
-              <input type="submit" value="test"  onclick="test()"/>
+          <div class="login-form">
+            <div class = "con">
+            <div class="form-group">
+              <input type="text" class="form-control login-field" value="" placeholder="Enter your name" id="login-name" />
+              <label class="login-field-icon fui-user" for="login-name"></label>
             </div>
-            <ul>
-              <li class="todo-done">
-                <div class="todo-icon fui-user"></div>
-                <div class="todo-content">
-                  <h4 class="todo-name">
-                    查看我的资产
-                  </h4>
-                  股票、基金等
-                </div>
-              </li>
-              <li>
-                <div class="todo-icon fui-list"></div>
-                <div class="todo-content">
-                  <h4 class="todo-name">
-                    了解市场近况
-                  </h4>
-                  时事、财经热点
-                </div>
-              </li>
-              <li>
-                <div class="todo-icon fui-eye"></div>
-                <div class="todo-content">
-                  <h4 class="todo-name">
-                    掌握市场走向
-                  </h4>
-                  热点分析、业内观点
-                </div>
-              </li>
-              <li>
-                <div class="todo-icon fui-time"></div>
-                <div class="todo-content">
-                  <h4 class="todo-name">
-                    制定理财计划
-                  </h4>
-                  合理配置资源
-                </div>
-              </li>
-            </ul>
-          </div><!-- /.todo -->
-        </div><!-- /.col-4 -->
 
-        <div class="col-8">
-          <video
-            id="my-player"
-            class="video-js"
-            controls
-            preload="auto"
-            poster="resource/pic.jpeg"
-            data-setup='{}'>
-            <source src="resource/big_buck_bunny.mp4" type="video/mp4"></source>
-            <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm"></source>
-            <p class="vjs-no-js">
-              To view this video please enable JavaScript, and consider upgrading to a
-              web browser that
-              <a href="http://videojs.com/html5-video-support/" target="_blank">
-                supports HTML5 video
-              </a>
-            </p>
-          </video>
-        </div> <!-- /video -->
-      </div>
+            <div class="form-group">
+              <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass" />
+              <label class="login-field-icon fui-lock" for="login-pass"></label>
+            </div>
+
+            <a class="btn btn-primary btn-lg btn-block" href="#">Log in</a>
+            <a class="login-link" href="#">Lost your password?</a>
+          </div>
+          </div>
+        </div>
+        
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap 4 requires Popper.js -->
+    <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+    <script src="dist/scripts/flat-ui.js"></script>
+    <script src="docs/assets/js/application.js"></script>
 
 </body>
 
