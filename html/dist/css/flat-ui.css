@@ -7094,7 +7094,7 @@ video::-webkit-media-text-track-display {
   margin: -0.5em 0 0 -1em;
 }
 
-input.todo-search-field {
+input. {
   background: none;
   border: none;
   color: #34495e;
@@ -7141,16 +7141,21 @@ input.todo-search-field::-webkit-input-placeholder {
 .login {
   background: url(../images/login/imac.png) 0 0 no-repeat;
   background-size: 940px 778px;
+  /*background-size: 50% 50%;*/
   color: white;
   margin-bottom: 77px;
   padding: 38px 38px 267px;
-  position: relative;
+  /*position: relative;*/
+  float: right;
 }
 
 .login-screen {
   background-color: #1abc9c;
-  min-height: 473px;
-  padding: 123px 199px 33px 306px;
+  /*min-height: 473px;
+  padding: 123px 199px 33px 306px;*/
+  size: 100% 50%;
+  float: right;
+  /*clear: both;*/
 }
 
 .login-icon {
@@ -7181,12 +7186,21 @@ input.todo-search-field::-webkit-input-placeholder {
 }
 
 .login-form {
-  background-color: #edeff1;
-  padding: 24px 23px 20px;
+  /*background-color: #1abc9c;*/
+  background-color: #edeff1; 
+  padding: 20px 30px 20px 30px;
   position: relative;
   border-radius: 6px;
+  margin-left: 900px;
 }
 
+.con{
+position: relative;
+background-color: rgb(40, 56, 75);
+margin: 20px 10px 10px 10px;
+padding: 10px;
+
+}
 .login-form .control-group {
   margin-bottom: 6px;
   position: relative;
@@ -7207,6 +7221,7 @@ input.todo-search-field::-webkit-input-placeholder {
 }
 
 .login-form .login-field-icon {
+
   color: #bfc9ca;
   font-size: 16px;
   position: absolute;
