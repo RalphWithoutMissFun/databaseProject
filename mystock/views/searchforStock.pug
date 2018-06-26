@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Search for your stock
+  
+  div(id = "search")
+    input(type="text" name="searchtext" class="searchword")
+    input(id="submit" type="button", value="Search")
