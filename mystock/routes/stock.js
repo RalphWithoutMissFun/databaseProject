@@ -1,7 +1,6 @@
 const router = require('koa-router')()
 
 
-module.exports = router;
 
 router.get('/detail', async (ctx, next) => {
     param = ctx.request.query;
@@ -9,7 +8,10 @@ router.get('/detail', async (ctx, next) => {
 });
 
 router.get('/search', async (ctx, next) => {
+    console.log('here')
     await ctx.render('searchforStock', {
         title: 'Search!'
     })
 });
+
+module.exports = router;

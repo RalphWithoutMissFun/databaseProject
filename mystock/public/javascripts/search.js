@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  $('submit').click(function () {
-    alert('1');
+  $('#submit').click(function () {
+    alert('to index');
+    window.location.href = '/'
   })
 });
